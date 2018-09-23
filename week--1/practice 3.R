@@ -1,10 +1,11 @@
+#給定四組資料
 person.name <- c("Jiyuian", "Shawnroom", "Bigmoumou")
 person.sex <- c("F", "M", "M")
 person.id <- c("jiyuian520", "shawnn520", "moumou123")
 person.days <- c(201, 37, 99)
-
+#形成表格
 df=data.frame(person.name,person.sex,person.id,person.days)
-
+#擷取資訊
 str(df)
 summary(df)
 df

@@ -6,7 +6,7 @@ allstudent <- length(csn)
 csg<-sample(x=c(55:100),size=allstudent)
 
 names(csg) <-(csn)
-
+#find mean max min 
 csg.mean=mean(csg)
 csg.max=max(csg)
 csg.min=min(csg)
