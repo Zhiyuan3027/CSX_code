@@ -1,0 +1,56 @@
+---
+title: "visualization"
+author: "Zhiyuan"
+date: "2018/10/03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#prepare
+```{r }
+library("ggplot2")
+resourse=iris
+```
+
+##qplot練習散佈圖
+color,shape可用來區別不同類別的資料
+
+alpha用於資料量過龐大太多點重複時,透明化數據點，以區分密集程度(用法alpha = I(1/n))
+
+```{r }
+qplot(Sepal.Length,Sepal.Width,data=resourse,
+      color=Species,
+      shape=Species,
+      geom = c("point", "smooth"))
+```
+
+
+##qplot練習箱形圖
+```{r}
+qplot(Species,Sepal.Length/Sepal.Width,data=resourse,
+      geom = "boxplot")
+```
+```{r}
+qplot(Species,Sepal.Length/Sepal.Width,data=resourse,
+      geom = "jitter")
+```
+
+##ggplot練習
+
+建立圖層
+```{r}
+my.plot <- ggplot(resourse, aes(Sepal.Length,Sepal.Width, colour = Species))
+```
+
+添加圖層
+```{r}
+my.plot <- my.plot + layer(
+  geom = "point",
+  stat = "identity",
+  position = "identity",
+  params = list(na.rm = FALSE)
+)
+print(my.plot)
+```
