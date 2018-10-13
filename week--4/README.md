@@ -8,4 +8,4 @@
 
 >## 連結
 * [wordcloud.rmd](http://CSX_code/week--4/wordcloud.rmd)
-* [wordcloud.html](http://)
+* [wordcloud.html](https://github.com/Zhiyuan3027/CSX_code/blob/master/week--4/wordcloud.html)
