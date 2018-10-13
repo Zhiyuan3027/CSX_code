@@ -7,5 +7,8 @@
 * 發現自行切割處理檔案時會容易有資料型態被改變而無法進行下一步操作的問題
 
 >## 連結
-* [wordcloud.rmd](http://CSX_code/week--4/wordcloud.rmd)
-* [wordcloud.html](http://www.w3.org/1999/xhtml)
+* [wordcloud.rmd](http://Zhiyuan3027.github.io/CSX_code/week--4/wordcloud.rmd)
+* [wordcloud.html](http://Zhiyuan3027.github.io/CSX_code/week--4/wordcloud.html)
+
+        
+      
